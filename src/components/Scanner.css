@@ -1,0 +1,222 @@
+.scanner-container {
+  text-align: center;
+  /* padding: 35px; */
+}
+
+.scanner-layout {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.webcam-container {
+  width: 640px;
+  height: 440px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #000;
+}
+
+.warning-message {
+  color: rgb(255, 72, 0);
+  font-size: 22px;
+  margin-top: 10px;
+}
+
+
+.pin-input-container,
+.rice-input-container {
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+  top: 25%;
+  left: 0;
+}
+
+.pin-input-container input,
+.rice-input-container input {
+  padding: 12px;
+  font-size: 26px;
+  width: 80%;
+  max-width: 300px;
+  text-align: center;
+  border: 2px solid #333;
+  border-radius: 8px;
+  outline: none;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.pin-input-container button,
+.rice-input-container button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.pin-input-container button:hover,
+.rice-input-container button:hover {
+  background: #0056b3;
+}
+
+
+
+.user-details-container {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background: #f9f9f9;
+  text-align: left;
+}
+
+.user-details-container h3 {
+  margin-bottom: 10px;
+}
+
+.user-details-container p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.data-buttons {
+  margin-top: 20px;
+}
+
+.data-buttons button {
+  padding: 8px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+  margin: 0 5px;
+}
+
+.data-buttons button:hover {
+  background: #218838;
+}/* Main container */
+/* Main container */
+.scanned-data-container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh; /* Full screen height */
+  background-color: #222; /* Dark theme */
+}
+
+/* Navbar - Full Width, 10% Height */
+.profile-navbar {
+  width: 100%;
+  height: 10%;
+  background-color: #3c3c3e;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Below Navbar - Two-box Layout */
+.data-section {
+  display: flex;
+  width: 100%;
+  height: 90%;
+}
+
+/* Left Box - 20% Width, Full Height */
+.left-box {
+  width: 20%;
+  height: 30%;
+
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 0;
+  justify-content: space-evenly;
+  border-right: 2px solid #383434;
+  font-size: 22px;
+}
+
+/* Right Box - 75% Width, Full Height */
+.right-box {
+  width: 80%;
+  height: 100%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+}
+.rightsub{
+  display: flex;
+  flex-direction: row;
+}
+
+/* Buttons inside Right Box */
+.right-box button {
+  display: flex;
+  flex-direction: row;
+  
+  padding: 10px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.right-box button:first-child {
+  background-color: #007bff;
+  color: white;
+}
+
+.right-box button:last-child {
+  background-color: #28a745;
+  color: white;
+}
+.scanner-container {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.exit-button {
+  position: fixed;
+  bottom: 30px; /* distance from bottom of the screen */
+  left: 10%;
+  transform: translateX(-50%);
+  background-color: #f74835;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+}
+.exit-button:hover{
+  background-color: #ff1900;
+}

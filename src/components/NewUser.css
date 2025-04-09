@@ -1,0 +1,93 @@
+/* Container styles */
+.new-user-container {
+    background-image: url('Public-Distribution-System.png'); /* Replace with your background image path */
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Georgia', serif; /* Elegant serif font for vintage vibe */
+    flex-direction: row; /* Make the container display in a row */
+  }
+  /* QR Code Download Button */
+.download-btn {
+  background-color: #28a745; /* Green color */
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  font-family: 'Courier New', Courier, monospace;
+  margin-top: 15px;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.download-btn:hover {
+  background-color: #218838; /* Darker green on hover */
+  transform: scale(1.05);
+}
+
+  .form-container {
+    background: rgba(255, 255, 255, 0.6); /* Soft cream background for vintage look */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+    border: 2px solid #d48e54;
+  }
+  
+  .form-title {
+    font-size: 2rem;
+    color: #6f4f31; /* Warm brown color */
+    font-family: 'Courier New', Courier, monospace; /* Monospace font for a vintage typewriter effect */
+    margin-bottom: 20px;
+  }
+  
+  .form-input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 2px solid #d48e54;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #fff8e1; /* Vintage light yellow */
+  }
+  
+  .generate-btn {
+    background-color: #d48e54;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .generate-btn:hover {
+    background-color: #6f4f31; /* Darker brown on hover */
+  }
+  
+  /* Container for QR Code box */
+  .qr-code-box {
+    background: #fcfcfc; /* Soft cream background */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-left: 40px; /* Space between the form and QR code box */
+    text-align: center;
+    width: 400px;
+  }
+  
+  .qr-code-box h3 {
+    color: #6f4f31;
+    margin-bottom: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+  }
+  

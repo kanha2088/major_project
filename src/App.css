@@ -1,0 +1,256 @@
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: "linear-gradient(135deg, #1e1e1e, #444), url('public-distribution-system.webp')";
+  background-size: "cover";
+  color: white;
+}
+
+/* 📌 Fixed Navigation */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: #1e1e3f;
+  padding: 15px 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+
+/* 📌 Updated Logo Styling */
+.logo-container {
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 10px 20px;
+  border-radius: 50px; /* Oval Shape */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.logo-container:hover {
+  transform: scale(1.1);
+}
+
+/* Circular Logo */
+.logo {
+  width: 80px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* 📌 Animated Website Name */
+.website-name {
+  font-size: 2rem;
+  font-weight: bold;
+  color: black;
+  margin-left: 15px;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  position: relative;
+  animation: textGlow 2s infinite alternate, slideInText 1.5s ease-out;
+}
+
+/* Glowing Animation */
+@keyframes textGlow {
+  0% { text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5); }
+  100% { text-shadow: 0px 0px 15px rgba(0, 0, 0, 1); }
+}
+
+/* Slide-In Animation */
+@keyframes slideInText {
+  0% { transform: translateX(-100px); opacity: 0; }
+  100% { transform: translateX(0); opacity: 1; }
+}
+
+/* 📌 Navigation Links */
+.navbar-links {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.nav-link:hover {
+  background-color: #4CAF50;
+  transform: scale(1.05);
+}
+
+.nav-link:active {
+  transform: scale(1);
+}
+
+/* 📌 Buttons */
+.btn {
+  background-color: #010d0d;
+  border: none;
+  padding: 15px 20px;
+  font-size: 19px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #231da3;
+}
+
+.btn:active {
+  background-color: #3cff00;
+}
+
+/* 📌 Home Page */
+.home-page {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;
+  align-items: center; */
+  min-height: 100vh;
+  background-image:url('./components/pds.webp');
+  background-size: cover
+}
+
+.home-header {
+  text-align: center;
+}
+
+.site-name {
+  font-size: 5rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #013cfc, #0b000c, #0317f4);
+  -webkit-background-clip: text;
+  color: transparent;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation: typing 10s steps(30) 1, erase 10s steps(30) 1 10s, restartTyping 20s infinite;
+}
+
+@keyframes typing {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
+
+@keyframes erase {
+  0% { width: 100%; }
+  100% { width: 0; }
+}
+
+@keyframes restartTyping {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
+
+.description {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  color: #ffffff;
+  animation: fadeIn 3s ease-out;
+}
+
+/* 📌 Rice Animation */
+.rice-animation-container {
+  position: absolute;
+  bottom: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: riceFall 5s infinite ease-in-out;
+}
+
+.rice-image {
+  width: 100px;
+  height: auto;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes riceFall {
+  0% { transform: translateY(-100px); }
+  50% { transform: translateY(0); }
+  100% { transform: translateY(100px); }
+}
+
+/* 📌 Page Styling */
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #fff;
+  padding-top: 100px;
+}
+
+.page h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  animation: slideIn 1s ease-out;
+}
+
+.page p {
+  font-size: 1.5rem;
+  color: #333;
+  text-align: center;
+  animation: slideIn 1.5s ease-out;
+}
+
+@keyframes slideIn {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(0); }
+}
+
+/* 📌 Buttons */
+.new-user-btn,
+.scan-btn {
+  width: 200px;
+  padding: 18px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.new-user-btn:hover,
+.scan-btn:hover {
+  background-color: #45a049;
+}
+
+/* 📌 Animation for Page Transitions */
+@keyframes fadeInPage {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.page {
+  animation: fadeInPage 1s ease-in;
+}
